@@ -16,7 +16,11 @@
               v-for="item in subjects"
               :key="item"
               class="list-item"
-            > {{ item }}
+            >
+            <router-link to="/subject">
+              {{ item }}
+            </router-link>
+ 
             </li>
           </ul>
         </div>
@@ -147,12 +151,14 @@ h2 {
   border-radius: 50%;
 }
 
-.list-item {
+.list-item a{
+  text-decoration: none;
+  display: block;
   color: #fff;
   margin-bottom: 18px;
 }
 
-.list-item:hover {
+.list-item a:hover {
   color: #4EABA8;
   cursor: pointer;
 }

@@ -1,6 +1,9 @@
 <template>
   <div class="wrapper">
     <nav-sidebar></nav-sidebar>
+    <div class="main-page-wrapper">
+      <router-view ></router-view>
+    </div>
   </div>
 </template>
 
@@ -34,10 +37,40 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.main-page-wrapper {
+  margin: 70px;
+}
+
+.page-title {
+  margin-bottom: 52px;
+}
+
+.page-header {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.button {
+  display: block;
+  padding: 19px 35px;
+  background:#EDF4F4;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background: #4EABA8;
+  color: #fff !important;
 }
 
 </style>

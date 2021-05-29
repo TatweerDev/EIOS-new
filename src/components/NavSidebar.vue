@@ -1,7 +1,9 @@
 <template>
   <aside class="aside">
     <div class="header">
-      <h1 class="header__text">ЭИОС</h1>
+      <router-link to="/">
+        <h1 class="header__text">ЭИОС</h1>
+      </router-link>
     </div>
     <sidebar-top />
     <sidebar-bottom />
