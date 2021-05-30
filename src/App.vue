@@ -48,22 +48,22 @@ a {
 }
 
 .main-page-wrapper {
-  margin: 70px;
+  margin: 53px;
 }
 
 .page-title {
-  margin-bottom: 52px;
+  margin-bottom: 39px;
 }
 
 .page-header {
   font-weight: normal;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 27px;
+  line-height: 33px;
 }
 
 .button {
   display: block;
-  padding: 19px 35px;
+  padding: 14px 26px;
   background:#EDF4F4;
   border-radius: 30px;
 }

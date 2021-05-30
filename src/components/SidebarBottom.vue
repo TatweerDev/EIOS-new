@@ -16,32 +16,34 @@
 
 <style scoped>
 .user {
-  width: 350px;
-  padding-left: 45px;
+  width: 263px;
+  padding-left: 34px;
   display: block;
-  margin: auto auto 50px auto;
+  margin: auto auto 38px auto;
 }
 
 .user__header {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .user__header h2 {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 18px;
   color: #4EABA8;
   font-weight: normal;
 }
 
 .links-list {
   list-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
+  padding-left: 30px;
 }
 
 .links-item {
   cursor: pointer;
   color: #fff;
-  margin-bottom: 29px;
+  margin-bottom: 22px;
+  font-size: 12px;
 }
 
 .links-item:hover {
@@ -60,12 +62,13 @@
 .calendar::before {
   position: absolute;
   content: '';
-  left: -38px;
-  bottom: 4px;
+  left: -29px;
+  bottom: 1px;
   width: 18px;
   height: 18px;
   background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)' fill='%234EABA8'%3E%3Cpath d='M11.25 4.88a.75.75 0 01-.75-.75V3h-3v1.13a.75.75 0 01-1.5 0V3c0-.83.67-1.5 1.5-1.5h3c.83 0 1.5.67 1.5 1.5v1.13c0 .4-.34.75-.75.75zM9.53 11.54a1.64 1.64 0 01-1.11-.02L0 8.72v5.72c0 1.14.92 2.06 2.06 2.06h13.88c1.14 0 2.06-.92 2.06-2.06V8.72l-8.47 2.82z'/%3E%3Cpath d='M18 5.81v1.72l-8.82 2.94a.5.5 0 01-.18.03.5.5 0 01-.18-.03L0 7.53V5.81c0-1.14.92-2.06 2.06-2.06h13.88c1.14 0 2.06.92 2.06 2.06z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Cpath fill='%23fff' d='M0 0h18v18H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");  
   background-repeat: no-repeat;
+  transform: scale(0.75);
 }
 
 .calendar::before {
@@ -80,8 +83,9 @@
   cursor: pointer;
   display: block;
   position: relative;
-  margin-left: 40px;
-  color: #4EABA8 ;;
+  margin-left: 30px;
+  color: #4EABA8 ;
+  font-size: 12px;
 }
 
 .logout:hover {

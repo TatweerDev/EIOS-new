@@ -23,8 +23,8 @@ export default {
 <style scoped>
 
 .aside {
-  width: 350px;
-  height: 1080px;
+  width: 263px;
+  height: 810px;
   display: flex;
   flex-direction: column;
   background-color: #274348;
@@ -40,19 +40,19 @@ export default {
   margin: 0;
   color: #fff;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 44px;
-  width: 122px;
+  font-size: 27px;
+  line-height: 33px;
+  width: 92px;
   margin: 0 auto;
   }
 
 .header__text::after {
   position: absolute;
   content: '';
-  right: -5px;
-  bottom: 8px;
-  width: 8px;
-  height: 8px;
+  right: -4px;
+  bottom: 6px;
+  width: 6px;
+  height: 6px;
   background-color: #4EABA8;
   border-radius: 50%;
 }

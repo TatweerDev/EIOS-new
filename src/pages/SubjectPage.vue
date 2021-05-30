@@ -81,10 +81,10 @@ export default {
 .classes-item {
   text-align: center;
   display: block;
-  font-size: 16px;
+  font-size: 12px;
   color: #4EABA8;
-  width: 222px;
-  margin: 0 20px 20px 0;
+  width: 166px;
+  margin: 0 15px 15px 0;
 }
 
 
