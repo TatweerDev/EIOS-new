@@ -1,6 +1,7 @@
 <template>
   <section>
-    <div class="page-title">
+    <div class="classes">
+      <div class="page-title">
       <h2 class="page-header">Информатика</h2>
     </div>
     <ul class="classes-list">
@@ -11,12 +12,24 @@
         class="classes-item button"
       >{{ el.number }} класс</li>
     </ul>
+    </div>
+    
+
+    <div>
+      <div class="materials-title">
+        <h2 class="page-header">Материалы</h2>
+      </div>
+      <subjects-table />
+    </div>
 
   </section>
 </template>
 
 <script>
+import SubjectsTable from '../components/SubjectsTable.vue'
+
 export default {
+  components: { SubjectsTable },
   data() {
     return {
       classes: [
@@ -71,6 +84,9 @@ export default {
 </script>
 
 <style scoped>
+.classes {
+  margin-bottom: 52px;
+}
 .classes-list {
   display: flex;
   flex-direction: row;
@@ -86,6 +102,5 @@ export default {
   width: 166px;
   margin: 0 15px 15px 0;
 }
-
 
 </style>
