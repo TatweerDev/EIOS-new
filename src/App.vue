@@ -70,7 +70,7 @@ a {
 
 .button:hover {
   background: #4EABA8;
-  color: #fff !important;
+  color: #fff;
   box-shadow: 0px 10px 30px rgba(78, 171, 168, 0.5);
 }
 
