@@ -4,7 +4,9 @@
       <h2>Личный кабинет</h2>
     </div>
     <ul class="links-list">
-      <li class="links-item portfolo">Портфолио</li>
+      <li class="links-item portfolo">
+        <router-link class="link" to="/portfolio">Портфолио</router-link>
+      </li>
       <li class="links-item calendar">Расписание занятий</li>
       <li class="links-item journal">Электронные журналы</li>
     </ul>
@@ -33,6 +35,10 @@
   font-weight: normal;
 }
 
+.link {
+  color: #fff;
+}
+
 .links-list {
   list-style: none;
   margin-bottom: 38px;
@@ -46,7 +52,7 @@
   font-size: 12px;
 }
 
-.links-item:hover {
+.link:hover {
   color: #4EABA8 ;
 }
 

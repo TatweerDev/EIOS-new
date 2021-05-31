@@ -193,9 +193,10 @@ h2 {
 }
 
 .subjects__list {
-  max-height: 300px;
+  max-height: 293px;
   padding-bottom: 11.5px;
   margin-right: 37.5px;
+  margin-bottom: 0;
   overflow-y: auto;
 }
 
