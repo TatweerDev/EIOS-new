@@ -7,8 +7,12 @@
       <li class="links-item portfolo">
         <router-link class="link" to="/portfolio">Портфолио</router-link>
       </li>
-      <li class="links-item calendar">Расписание занятий</li>
-      <li class="links-item journal">Электронные журналы</li>
+      <li class="links-item calendar">
+        <router-link class="link" to="/calendary">Расписание занятий</router-link>
+      </li>
+      <li class="links-item journal">
+        <router-link class="link" to="/journal">Электронные журналы</router-link>
+      </li>
     </ul>
     <div>
       <span class="logout">Выйти</span>

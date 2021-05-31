@@ -4,6 +4,9 @@ import TitlePage from './pages/TitlePage.vue'
 import SubjectPage from './pages/SubjectPage.vue'
 import ServicestPage from './pages/ServicesPage'
 import PortfolioPage from './pages/PortfolioPage.vue'
+import CalendarPage from './pages/CalendarPage.vue'
+import JournalPage from './pages/JournalPage.vue'
+import NotFoundPage from './pages/NotFound.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -11,8 +14,9 @@ const router = createRouter({
     { path: '/subject', component: SubjectPage },
     { path: '/services', component: ServicestPage },
     { path: '/portfolio', component: PortfolioPage },
-    { path: '/calendary', component: null },
-    { path: '/:notFound(.*)', component: null },
+    { path: '/calendary', component: CalendarPage },
+    { path: '/journal', component: JournalPage },
+    { path: '/:notFound(.*)', component: NotFoundPage },
   ],
 })
 
