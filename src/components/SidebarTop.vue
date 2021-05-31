@@ -38,7 +38,11 @@
               v-for="item in services"
               :key="item"
               class="service-item"
-            > {{ item.name }}
+            >
+            <router-link class="service-item" to="/services">
+              {{ item.name }}
+            </router-link>
+             
             </li>
           </ul>
         </div>

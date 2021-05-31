@@ -2,26 +2,24 @@
   <section>
     <div class="classes">
       <div class="page-title">
-      <h2 class="page-header">Информатика</h2>
+        <h2 class="page-header">Информатика</h2>
+      </div>
+      <ul class="classes-list">
+        <li
+          v-for="el in classes"
+          :key="el"
+          :disabled="el.isDisabled"
+          class="classes-item button"
+          :class="{ disabled: el.isDisabled, active: el.isActive }"
+        >{{ el.number }} класс</li>
+      </ul>
     </div>
-    <ul class="classes-list">
-      <li
-        v-for="el in classes"
-        :key="el"
-        :disabled="el.isDisabled"
-        class="classes-item button"
-        :class="{ disabled: el.isDisabled, active: el.isActive }"
-      >{{ el.number }} класс</li>
-    </ul>
-    </div>
-
     <div>
       <div class="materials-title">
         <h2 class="page-header">Материалы</h2>
       </div>
       <subjects-table />
     </div>
-
   </section>
 </template>
 
