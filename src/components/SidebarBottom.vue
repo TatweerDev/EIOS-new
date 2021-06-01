@@ -55,6 +55,14 @@
   margin-bottom: 22px;
   font-size: 12px;
 }
+.links-item a:router-link-active {
+  color: #4EABA8;
+}
+
+.router-link-exact-active {
+  color: #4EABA8 !important;
+  font-weight: 600;
+}
 
 .link:hover {
   color: #4EABA8 ;

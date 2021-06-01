@@ -2,7 +2,11 @@
   <div class="wrapper">
     <nav-sidebar></nav-sidebar>
     <div class="main-page-wrapper">
-      <router-view ></router-view>
+      <router-view v-slot="slotProps">
+        <transition name="route" mode="out-in">
+        <component :is="slotProps.Component"></component>
+      </transition>
+      </router-view>
     </div>
   </div>
 </template>
@@ -72,6 +76,30 @@ a {
   background: #4EABA8;
   color: #fff;
   box-shadow: 0px 10px 30px rgba(78, 171, 168, 0.5);
+}
+
+.route-enter-from {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.route-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.route-leave-active {
+  transition: all 0.3s ease-in;
+}
+
+.route-enter-to,
+.route-leave-from {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 </style>

@@ -27,7 +27,7 @@
 <script>
 import SubjectsTable from '../components/SubjectsTable.vue'
 
-export default {
+export default { 
   components: { SubjectsTable },
   data() {
     return {

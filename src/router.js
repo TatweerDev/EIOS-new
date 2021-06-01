@@ -11,7 +11,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', component: TitlePage },
-    { path: '/subject', component: SubjectPage },
+    { path: '/:slug' , component: SubjectPage, props: true },
     { path: '/services', component: ServicestPage },
     { path: '/portfolio', component: PortfolioPage },
     { path: '/calendary', component: CalendarPage },

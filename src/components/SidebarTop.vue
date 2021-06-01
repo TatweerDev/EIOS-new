@@ -15,12 +15,13 @@
             <li
               v-for="item in subjects"
               :key="item"
+              :slug="item.slug"
+              :title="item.title"
               class="list-item"
             >
-            <router-link to="/subject">
-              {{ item }}
+            <router-link :to=getLinkAddr(item.slug)>
+              {{ item.title }}
             </router-link>
- 
             </li>
           </ul>
         </div>
@@ -39,7 +40,7 @@
               :key="item"
               class="service-item"
             >
-            <router-link class="service-item" to="/services">
+            <router-link to="/services">
               {{ item.name }}
             </router-link>
              
@@ -55,17 +56,46 @@ export default {
   data() {
     return {
       subjects: [
-        'Математика',
-        'Геометрия',
-        'Русский язык',
-        'Русская литература',
-        'Иностранный язык',
-        'Информатика',
-        'Физика',
-        'Астрономия',
-        'Химия',
-        'Биология',
-        'География'
+        {
+          title: 'Математика',
+          slug: 'math',
+        },
+        {
+          title: 'Геометрия',
+          slug: 'geo',
+        },
+        {
+          title: 'Русский язык',
+          slug: 'ruslang',
+        },
+        {
+          title: 'Русская литература',
+          slug: 'ruslit',
+        },
+        {
+          title: 'Иностранный язык',
+          slug: 'foreign',
+        },
+        {
+          title: 'Информатика',
+          slug: 'informatics',
+        },
+        {
+          title: 'Физика',
+          slug: 'physic',
+        },
+        {
+          title: 'Астрономия',
+          slug: 'astronomy',
+        },
+        {
+          title: 'Химия',
+          slug: 'chemistry',
+        },
+        {
+          title: 'Биология',
+          slug: 'biology',
+        },
       ],
       services: [
         {
@@ -85,6 +115,9 @@ export default {
     showServices() {
       this.subjectsShown = false
       this.servicesShown = !this.servicesShown
+    },
+    getLinkAddr (slug) {
+      return '/' + slug
     }
   }
 }
@@ -152,16 +185,20 @@ h2 {
   padding-bottom: 15px;
 }
 
-.service-item {
+.service-item a {
   color: #fff;
   font-size: 10.5px;
   margin-bottom: 15px;
 
 }
 
-.service-item:hover {
+.service-item a:hover {
   color: #4EABA8;
   cursor: pointer;
+}
+
+.service-item a:router-link-active {
+  color: #4EABA8;
 }
 
 .subjects__header,
@@ -235,6 +272,11 @@ h2 {
   width: 100%;
   height: 27px;
   background: linear-gradient(0deg, rgba(39,71,78,1) 0%, rgba(39,71,78,0.7) 50%, rgba(39,71,78,0) 100%);
+}
+
+.router-link-exact-active {
+  color: #4EABA8 !important;
+  font-weight: 600;
 }
 
 .triangle {
