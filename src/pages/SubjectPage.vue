@@ -129,9 +129,9 @@ export default {
 }
 
 .disabled {
-  background: #fff;
-  color: #CACACA;
-  border: 1px solid #CACACA;
+  background: #fff !important;
+  color: #CACACA !important;
+  border: 1px solid #CACACA !important;
 }
 
 .active {
