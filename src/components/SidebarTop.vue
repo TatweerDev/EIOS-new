@@ -10,7 +10,7 @@
             <span class="triangle" :class="{rotated: subjectsShown}"></span>
           </div>
         </button>
-        <div class="list-wrapper" v-show="subjectsShown">
+        <div class="list-wrapper" :class="{opened: subjectsShown}">
           <ul class="subjects__list">
             <li
               v-for="item in subjects"
@@ -32,7 +32,7 @@
             <span class="triangle" :class="{rotated: servicesShown}"></span>
           </div>
         </button>
-        <div class="services-wrapper" v-show="servicesShown">
+        <div class="services-wrapper" :class="{servopen: servicesShown}">
           <ul class="services__list">
             <li
               v-for="item in services"
@@ -141,16 +141,26 @@ h2 {
 }
 
 .services-wrapper {
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.2s all;
+ 
+}
+
+.servopen {
+  max-height: 200px;
   padding-bottom: 15px;
 }
 
 .service-item {
-  color: #4EABA8;
+  color: #fff;
   font-size: 10.5px;
+  margin-bottom: 15px;
+
 }
 
 .service-item:hover {
-  opacity: 0.7;
+  color: #4EABA8;
   cursor: pointer;
 }
 
@@ -198,11 +208,23 @@ h2 {
   margin-right: 37.5px;
   margin-bottom: 0;
   overflow-y: auto;
+  transition: 0.2s all;
+}
+
+.services__list {
+  overflow-y: auto;
+  margin-bottom: 0;
 }
 
 .list-wrapper {
-  transition: 0.5s ease-in;
+  height: 0;
+  overflow: hidden;
+  transition: 0.2s all;
   position: relative;
+}
+
+.opened {
+  height: 293px;
 }
 
 .list-wrapper::after {

@@ -11,6 +11,7 @@
           :disabled="el.isDisabled"
           class="classes-item button"
           :class="{ disabled: el.isDisabled, active: el.isActive }"
+          @click="toggleActive(el)"
         >{{ el.number }} класс</li>
       </ul>
     </div>
@@ -34,7 +35,7 @@ export default {
         {
           number: '1',
           isDisabled: false,
-          isActive: true
+          isActive: false
         },
         {
           number: '2',
@@ -88,6 +89,11 @@ export default {
         },
       ]
     }
+  },
+  methods: {
+    toggleActive(el) {
+      el.isActive = !el.isActive
+    }
   }
 }
 </script>
@@ -116,6 +122,10 @@ export default {
   cursor: pointer;
   color: #fff;
   opacity: 0.7;
+}
+
+.classes-item:active {
+  opacity: 0.3;
 }
 
 .disabled {

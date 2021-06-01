@@ -64,6 +64,7 @@ export default {
   color: #4EABA8;
   font-weight: 600;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 .classes-item:hover {
   color: #fff;
