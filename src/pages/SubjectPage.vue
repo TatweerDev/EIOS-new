@@ -33,31 +33,6 @@ export default {
     return {
       classes: [
         {
-          number: '1',
-          isDisabled: false,
-          isActive: false
-        },
-        {
-          number: '2',
-          isDisabled: false,
-          isActive: false
-        },
-        {
-          number: '3',
-          isDisabled: false,
-          isActive: false
-        },
-        {
-          number: '4',
-          isDisabled: false,
-          isActive: false
-        },
-        {
-          number: '5',
-          isDisabled: false,
-          isActive: false
-        },
-        {
           number: '6',
           isDisabled: false,
           isActive: false
