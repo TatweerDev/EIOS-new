@@ -15,7 +15,7 @@
       </li>
     </ul>
     <div>
-      <span class="logout">Выйти</span>
+      <span class="logout">Вход</span>
     </div>
   </section>
 </template>
