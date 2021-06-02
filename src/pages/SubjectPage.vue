@@ -8,11 +8,15 @@
         <li
           v-for="el in classes"
           :key="el"
-          :disabled="el.isDisabled"
-          class="classes-item button"
-          :class="{ disabled: el.isDisabled, active: el.isActive }"
-          @click="toggleActive(el)"
-        >{{ el.number }} класс</li>
+        >
+         <router-link
+            class="classes-item button"
+            to="/denied"
+            :class="{ disabled: el.isDisabled, active: el.isActive }"
+            @click="toggleActive(el)"
+          >{{ el.number }} класс
+          </router-link>
+        </li>
       </ul>
     </div>
     <div>

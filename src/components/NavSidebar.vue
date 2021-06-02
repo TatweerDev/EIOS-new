@@ -2,7 +2,7 @@
   <aside class="aside">
     <div class="header">
       <router-link to="/">
-        <h1 class="header__text">ЭИОС</h1>
+        <h2 class="header__text">ЭИОС</h2>
       </router-link>
     </div>
     <sidebar-top />
