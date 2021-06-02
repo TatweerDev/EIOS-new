@@ -16,8 +16,8 @@
 
 .content h1 {
   display: block;
-  margin: 0 0 95px 0;
-  font-size: 48px;
+  margin: 0 0 110px 0;
+  font-size: 55px;
   font-weight: 500;
   color: #fff;
 }
@@ -38,10 +38,10 @@
 
 .descr {
   display: block;
-  width: 600px;
+  width: 800px;
   color: #fff;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 30px;
 }
 </style>
