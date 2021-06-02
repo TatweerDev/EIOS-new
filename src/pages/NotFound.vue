@@ -1,5 +1,5 @@
 <template>
-  <div class="not-found">
+  <div class="not-found page-indent">
     <h2>Страница не найдена, но вы можете вернуться <router-link to="/"> на главную</router-link></h2>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="page-indent">
     <div class="classes">
       <div class="page-title">
         <h2 class="page-header">Информатика</h2>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="page-indent">
     <div class="page-title">
       <h2 class="page-header">Подготовка к ГИА, ЕГЭ</h2>
     </div>

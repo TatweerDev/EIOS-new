@@ -1,13 +1,11 @@
 <template>
   <div class="wrapper">
     <nav-sidebar></nav-sidebar>
-    <div class="main-page-wrapper">
-      <router-view v-slot="slotProps">
-        <transition name="route" mode="out-in">
-        <component :is="slotProps.Component"></component>
-      </transition>
-      </router-view>
-    </div>
+    <router-view v-slot="slotProps">
+      <transition name="route" mode="out-in">
+      <component :is="slotProps.Component"></component>
+    </transition>
+    </router-view>
   </div>
 </template>
 
@@ -51,7 +49,7 @@ a {
   width: 100%;
 }
 
-.main-page-wrapper {
+.page-indent {
   margin: 53px;
 }
 

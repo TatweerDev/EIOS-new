@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="page-indent">
     <div class="page-title">
       <h2 class="page-header">Расписание занятий</h2>
     </div>
