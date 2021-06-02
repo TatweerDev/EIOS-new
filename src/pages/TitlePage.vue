@@ -16,7 +16,7 @@
 
 .content h1 {
   display: block;
-  margin: 0 0 90px 0;
+  margin: 0 0 95px 0;
   font-size: 48px;
   font-weight: 500;
   color: #fff;
